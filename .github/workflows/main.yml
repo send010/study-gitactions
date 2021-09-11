@@ -27,10 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run exe
-        run: |
-          cd ${{ github.workspace }}
-          ls
-      - name: Copy libraries
         shell: cmd
         run: |
+          cd ${{ github.workspace }}
           Test.exe
