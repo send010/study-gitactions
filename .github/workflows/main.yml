@@ -30,4 +30,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}
           ls
+      - name: Copy libraries
+        shell: cmd
+        run: |
           Test.exe
