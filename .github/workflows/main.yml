@@ -30,7 +30,7 @@ jobs:
         shell: bash
         run: |
           cd ${{ github.workspace }}
-          chomd 777 Test
+          chmod 777 Test
           ./Test
       
       - name: Deploy #步骤4：把编译好的静态目录上传到gh-pages分支上
